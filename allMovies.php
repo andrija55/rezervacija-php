@@ -1,10 +1,10 @@
 <?php
 
 include('DB.php');
+include('Movie.php');
 
-$sql_query = "SELECT * FROM film";
+$data = Movie::getAllMovies($connection);
 
-$data = $connection->query($sql_query);
 
 ?>
 

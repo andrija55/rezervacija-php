@@ -17,11 +17,19 @@
         <h4 class="text-center text-secondary">Internet tehnologije - Prvi domaći zadatak - PHP OOP MySQL AJAX</h4>
         <h1 class="text-center text-success">Bioskop - Rezervacije</h1>
 
+        <div class="row">
+            <input type="text" class="form-control" id="p_input">
+            <button class="btn btn-primary" id="p_button" onclick="pretraziFilmovePoNazivu()">Pretraži</button>
+        </div>
+
         <?php
         include('allMovies.php');
         ?>
 
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
 
 </body>
 
