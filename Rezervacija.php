@@ -31,4 +31,12 @@ class Rezervacija
 
         return $connection->query($sql_query);
     }
+
+
+    public static function getAllReservations($connection)
+    {
+        $sql_query = "SELECT rezervacija.*, film.naziv FROM rezervacija JOIN film ON rezervacija.film_id = film.film_id";
+
+        return $connection->query($sql_query);
+    }
 }

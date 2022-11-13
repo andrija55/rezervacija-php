@@ -16,6 +16,7 @@
 
         <h4 class="text-center text-secondary">Internet tehnologije - Prvi domaći zadatak - PHP OOP MySQL AJAX</h4>
         <h1 class="text-center text-success">Bioskop - Rezervacije</h1>
+        <a href="allReservations.php"><button class="btn btn-success" id="rezervacije">REZERVACIJE</button></a>
 
         <div class="row">
             <input type="text" class="form-control" id="p_input">
