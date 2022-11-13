@@ -20,7 +20,7 @@ while ($film = mysqli_fetch_object($data)) {
             <li class="list-group-item">Režiser: <?php echo $film->reziser; ?></li>
         </ul>
         <div class="card-body">
-            <button class="btn btn-primary" id="rezervisi-button">Rezerviši</button>
+            <a href="forma-rezervacija.php?film_id=<?php echo $film->film_id ?>"><button class="btn btn-primary" id="rezervisi-button">Rezerviši</button></a>
         </div>
     </div>
 

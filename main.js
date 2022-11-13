@@ -13,7 +13,6 @@ function pretraziFilmovePoNazivu() {
             $('.div-movies').html(data);
         }
     })
-
-
-
 }
+
+
