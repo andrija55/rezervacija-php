@@ -31,6 +31,7 @@
                         <th>Dan</th>
                         <th>Termin</th>
                         <th>Broj karata</th>
+                        <th>X</th>
                     </tr>
                 </thead>
 
@@ -53,6 +54,7 @@
                             <td><?php echo $rezervacija->dan; ?></td>
                             <td><?php echo $rezervacija->termin; ?></td>
                             <td><?php echo $rezervacija->broj_karata; ?></td>
+                            <td><button class="btn btn-danger" onclick="obrisiRezervacijuId(<?php echo $rezervacija->rezervacija_id; ?>)">Obriši rezervaciju</button></td>
                         </tr>
                     <?php } ?>
                 </tbody>

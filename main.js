@@ -16,3 +16,18 @@ function pretraziFilmovePoNazivu() {
 }
 
 
+function obrisiRezervacijuId(id) {
+
+    $.ajax({
+        url: 'db-ajax/delete.php',
+        method: 'post',
+        data: {
+            rezervacija_id: id
+        },
+
+        success: function () {
+            window.location.reload()
+        }
+    })
+}
+

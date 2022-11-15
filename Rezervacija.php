@@ -39,4 +39,12 @@ class Rezervacija
 
         return $connection->query($sql_query);
     }
+
+
+    public static function obrisiRezervaciju($id, $connection)
+    {
+        $sql_query = "DELETE FROM rezervacija WHERE rezervacija_id=" . $id;
+
+        return $connection->query($sql_query);
+    }
 }
