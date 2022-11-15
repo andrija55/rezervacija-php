@@ -17,6 +17,7 @@
         <h4 class="text-center text-secondary">Internet tehnologije - Prvi domaći zadatak - PHP OOP MySQL AJAX</h4>
         <h1 class="text-center text-success">Bioskop - Rezervacije</h1>
 
+        <button class="btn btn-danger" onclick="sortirajPoDanuIVremenu()" id="filter-button">FILTER</button>
 
 
         <div class="div-reservations">

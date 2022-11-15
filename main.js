@@ -31,3 +31,26 @@ function obrisiRezervacijuId(id) {
     })
 }
 
+
+
+var sort = "ASC";
+
+function sortirajPoDanuIVremenu() {
+
+    $.ajax({
+        url: 'db-ajax/sort.php',
+        method: 'post',
+        data: {
+            sort_post: sort
+        },
+
+        success: function (data) {
+            $('tbody').html(data)
+            if (sort == "DESC")
+                sort = "ASC"
+            else
+                sort = "DESC"
+        }
+    })
+}
+

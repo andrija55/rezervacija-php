@@ -67,3 +67,11 @@ h2 {
     margin-top: 2%;
     margin-left: 9%;
 }
+
+#filter-button {
+    width: 15%;
+    margin-top: 0.5%;
+    margin-left: 42.5%;
+    margin-bottom: -0.5%;
+    font-size: 17px;
+}

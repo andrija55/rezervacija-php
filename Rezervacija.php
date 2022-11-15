@@ -47,4 +47,15 @@ class Rezervacija
 
         return $connection->query($sql_query);
     }
+
+
+    public static function sortRezervacije($sort, $connection)
+    {
+        $sql_query = "SELECT rezervacija.*, film.naziv
+         FROM rezervacija JOIN film ON rezervacija.film_id = film.film_id
+         ORDER BY rezervacija.dan " . $sort . ", rezervacija.termin " . $sort;
+
+
+        return $connection->query($sql_query);
+    }
 }
