@@ -33,24 +33,28 @@ function obrisiRezervacijuId(id) {
 
 
 
-var sort = "ASC";
 
 function sortirajPoDanuIVremenu() {
+
+    var asc_desc = $('#asc_desc').val()
 
     $.ajax({
         url: 'db-ajax/sort.php',
         method: 'post',
         data: {
-            sort_post: sort
+            sort_post: asc_desc
         },
 
         success: function (data) {
             $('tbody').html(data)
-            if (sort == "DESC")
-                sort = "ASC"
-            else
-                sort = "DESC"
+
         }
     })
+
+    if (asc_desc == 'asc')
+        $('#asc_desc').val('desc')
+    else
+        $('#asc_desc').val('asc')
+
 }
 
